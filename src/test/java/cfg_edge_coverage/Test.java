@@ -1,4 +1,4 @@
-package branch_coverage;
+package cfg_edge_coverage;
 
 /**
  * Created by Marion on 03/29/16.
