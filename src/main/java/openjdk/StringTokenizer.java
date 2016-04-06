@@ -328,7 +328,7 @@ class StringTokenizer implements Enumeration<Object> {
 
     /**
      * Returns the next token from this string tokenizer.
-     *
+     *s
      * @return     the next token from this string tokenizer.
      * @exception  NoSuchElementException  if there are no more tokens in this
      *               tokenizer's string.
