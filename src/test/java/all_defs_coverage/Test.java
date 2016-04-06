@@ -1,3 +1,5 @@
+package all_defs_coverage;
+
 /**
  * Created by Marion on 03/29/16.
  */
