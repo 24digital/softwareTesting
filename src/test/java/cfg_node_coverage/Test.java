@@ -1,4 +1,4 @@
-package cfg_edge_coverage;
+package cfg_node_coverage;
 
 /**
  * Created by Marion on 03/29/16.
