@@ -1,4 +1,4 @@
-package all_uses_coverage;
+package cfg_edge_pair_coverage;
 
 import org.junit.*;
 
