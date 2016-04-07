@@ -6,10 +6,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by SandiferAV on 4/6/2016.
+ * Created by sandiferav on 4/7/2016.
  */
-//
-public class StringTokenizerTest {
+public class All_Uses_Coverage_Test {
 
     @Before
     public void setUp() throws Exception {
