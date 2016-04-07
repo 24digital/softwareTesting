@@ -17,7 +17,7 @@ public class All_Defs_Test {
 
     @Test
     public void testHasMoreTokens() throws Exception {
-
+//
     }
 
     @Test
