@@ -32,6 +32,10 @@ public class All_Defs_Test {
 
     }
 
+    /**
+     * Testing for more elements to exist after construction.
+     * @throws Exception
+     */
     @Test
 public void testHasMoreElementsTrue() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("Test 1");
