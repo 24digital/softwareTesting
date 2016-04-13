@@ -1,5 +1,7 @@
 package all_defs_coverage;
 
+import openjdk.StringTokenizer;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -31,9 +33,21 @@ public class All_Defs_Test {
     }
 
     @Test
-    public void testHasMoreElements() throws Exception {
+public void testHasMoreElementsTrue() throws Exception {
+        StringTokenizer stringTokenizer = new StringTokenizer("Test 1");
+        Assert.assertTrue(stringTokenizer.hasMoreElements());
 
     }
+
+    public void testHasMoreElementsFalse() throws Exception {
+        StringTokenizer stringTokenizer = new StringTokenizer("Testing this application");
+        stringTokenizer.nextElement();
+        stringTokenizer.nextToken();
+
+        Assert.assertFalse(stringTokenizer.hasMoreElements());
+
+    }
+
 
     @Test
     public void testNextElement() throws Exception {
