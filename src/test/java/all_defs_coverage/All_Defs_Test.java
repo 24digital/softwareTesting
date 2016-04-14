@@ -43,6 +43,10 @@ public void testHasMoreElementsTrue() throws Exception {
 
     }
 
+    /**
+     * Testing for false after removing all elements.
+     * @throws Exception
+     */
     public void testHasMoreElementsFalse() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("Testing this application");
         stringTokenizer.nextElement();

@@ -1,5 +1,7 @@
 package all_du_paths_coverage;
 
+import openjdk.StringTokenizer;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -29,12 +31,29 @@ public class All_du_paths_coverage {
     public void testNextToken1() throws Exception {
 
     }
-
+    /**
+     * Testing for more elements to exist after construction.
+     * @throws Exception
+     */
     @Test
-    public void testHasMoreElements() throws Exception {
+    public void testHasMoreElementsTrue() throws Exception {
+        StringTokenizer stringTokenizer = new StringTokenizer("Test 1");
+        Assert.assertTrue(stringTokenizer.hasMoreElements());
 
     }
 
+    /**
+     * Testing for false after removing all elements.
+     * @throws Exception
+     */
+    public void testHasMoreElementsFalse() throws Exception {
+        StringTokenizer stringTokenizer = new StringTokenizer("Testing this application");
+        stringTokenizer.nextElement();
+        stringTokenizer.nextToken();
+
+        Assert.assertFalse(stringTokenizer.hasMoreElements());
+
+    }
     @Test
     public void testNextElement() throws Exception {
 

@@ -1,5 +1,6 @@
 package cfg_node_coverage;
 
+import openjdk.StringTokenizer;
 import org.junit.*;
 import org.junit.Test;
 
@@ -30,8 +31,27 @@ public class Cfg_Node_Coverage_Test {
 
     }
 
+    /**
+     * Testing for more elements to exist after construction.
+     * @throws Exception
+     */
     @Test
-    public void testHasMoreElements() throws Exception {
+    public void testHasMoreElementsTrue() throws Exception {
+        StringTokenizer stringTokenizer = new StringTokenizer("Test 1");
+        Assert.assertTrue(stringTokenizer.hasMoreElements());
+
+    }
+
+    /**
+     * Testing for false after removing all elements.
+     * @throws Exception
+     */
+    public void testHasMoreElementsFalse() throws Exception {
+        StringTokenizer stringTokenizer = new StringTokenizer("Testing this application");
+        stringTokenizer.nextElement();
+        stringTokenizer.nextToken();
+
+        Assert.assertFalse(stringTokenizer.hasMoreElements());
 
     }
 
