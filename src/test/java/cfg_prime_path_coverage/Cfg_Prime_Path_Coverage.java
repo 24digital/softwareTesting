@@ -39,7 +39,7 @@ public class Cfg_Prime_Path_Coverage {
     @Test
     public void testHasMoreElementsTrue() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("Test 1");
-        Assert.assertTrue(stringTokenizer.hasMoreElements());
+        Assert.assertTrue(stringTokenizer.hasMoreTokens());
 
     }
 
@@ -52,7 +52,7 @@ public class Cfg_Prime_Path_Coverage {
         stringTokenizer.nextElement();
         stringTokenizer.nextToken();
 
-        Assert.assertFalse(stringTokenizer.hasMoreElements());
+        Assert.assertFalse(stringTokenizer.hasMoreTokens());
 
     }
 

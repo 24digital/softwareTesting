@@ -38,7 +38,7 @@ public class All_du_paths_coverage {
     @Test
     public void testHasMoreElementsTrue() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("Test 1");
-        Assert.assertTrue(stringTokenizer.hasMoreElements());
+        Assert.assertTrue(stringTokenizer.hasMoreTokens());
 
     }
 
@@ -51,7 +51,7 @@ public class All_du_paths_coverage {
         stringTokenizer.nextElement();
         stringTokenizer.nextToken();
 
-        Assert.assertFalse(stringTokenizer.hasMoreElements());
+        Assert.assertFalse(stringTokenizer.hasMoreTokens());
 
     }
     @Test

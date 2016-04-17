@@ -39,7 +39,7 @@ public class Cfg_Edge_Coverage_Test {
     @Test
     public void testHasMoreElementsTrue() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("Test 1");
-        Assert.assertTrue(stringTokenizer.hasMoreElements());
+        Assert.assertTrue(stringTokenizer.hasMoreTokens());
 
     }
 
@@ -52,7 +52,7 @@ public class Cfg_Edge_Coverage_Test {
         stringTokenizer.nextElement();
         stringTokenizer.nextToken();
 
-        Assert.assertFalse(stringTokenizer.hasMoreElements());
+        Assert.assertFalse(stringTokenizer.hasMoreTokens());
 
     }
 
