@@ -38,6 +38,7 @@ public class All_du_paths_coverage {
     @Test
     public void testHasMoreElementsTrue() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("Test 1");
+       int k = stringTokenizer.countTokens();
         Assert.assertTrue(stringTokenizer.hasMoreTokens());
 
     }

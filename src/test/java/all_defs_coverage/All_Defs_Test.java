@@ -38,7 +38,7 @@ public class All_Defs_Test {
      */
     @Test
 public void testHasMoreElementsTrue() throws Exception {
-        StringTokenizer stringTokenizer = new StringTokenizer("Test 1");
+        StringTokenizer stringTokenizer = new StringTokenizer("This is a test. The weather is great!");
         Assert.assertTrue(stringTokenizer.hasMoreTokens());
 
     }
@@ -48,7 +48,7 @@ public void testHasMoreElementsTrue() throws Exception {
      * @throws Exception
      */
     public void testHasMoreElementsFalse() throws Exception {
-        StringTokenizer stringTokenizer = new StringTokenizer("Testing this application");
+        StringTokenizer stringTokenizer = new StringTokenizer("Testing this application. The weather is bad!");
         stringTokenizer.nextElement();
         stringTokenizer.nextToken();
 
