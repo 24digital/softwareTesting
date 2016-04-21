@@ -47,6 +47,7 @@ public class All_du_paths_coverage {
      * Testing for false after removing all elements.
      * @throws Exception
      */
+    @Test
     public void testHasMoreElementsFalse() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("Testing this application");
         stringTokenizer.nextElement();

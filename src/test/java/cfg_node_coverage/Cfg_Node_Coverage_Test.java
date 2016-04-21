@@ -42,19 +42,6 @@ public class Cfg_Node_Coverage_Test {
 
     }
 
-    /**
-     * Testing for false after removing all elements.
-     * @throws Exception
-     */
-    @Test
-    public void testHasMoreElementsFalse() throws Exception {
-        StringTokenizer stringTokenizer = new StringTokenizer("Testing this application");
-        stringTokenizer.nextElement();
-        stringTokenizer.nextToken();
-
-        Assert.assertFalse(stringTokenizer.hasMoreTokens());
-
-    }
 
     @Test
     public void testNextElement() throws Exception {
