@@ -25,6 +25,8 @@ package openjdk;/*
 
 
 
+import openJdk2.Strings;
+
 import java.lang.*;
 import java.util.Enumeration;
 import java.util.NoSuchElementException;
@@ -79,12 +81,12 @@ import java.util.NoSuchElementException;
  * <tt>StringTokenizer</tt> is a legacy class that is retained for
  * compatibility reasons although its use is discouraged in new code. It is
  * recommended that anyone seeking this functionality use the <tt>split</tt>
- * method of <tt>String</tt> or the java.util.regex package instead.
+ * method of <tt>Strings</tt> or the java.util.regex package instead.
  * <p>
- * The following example illustrates how the <tt>String.split</tt>
+ * The following example illustrates how the <tt>Strings.split</tt>
  * method can be used to break up a string into its basic tokens:
  * <blockquote><pre>
- *     String[] result = "this is a test".split("\\s");
+ *     Strings[] result = "this is a test".split("\\s");
  *     for (int x=; x&lt;result.length; x++)
  *         System.out.println(result[x]);
  * </pre></blockquote>
@@ -126,7 +128,7 @@ class StringTokenizer implements Enumeration<Object> {
     /**
      * If delimiters include any surrogates (including surrogate
      * pairs), hasSurrogates is true and the tokenizer uses the
-     * different code path. This is because String.indexOf(int)
+     * different code path. This is because Strings.indexOf(int)
      * doesn't handle unpaired surrogates as a single character.
      */
     private boolean hasSurrogates = false;
@@ -396,7 +398,7 @@ class StringTokenizer implements Enumeration<Object> {
     /**
      * Returns the same value as the <code>nextToken</code> method,
      * except that its declared return value is <code>Object</code> rather than
-     * <code>String</code>. It exists so that this class can implement the
+     * <code>Strings</code>. It exists so that this class can implement the
      * <code>Enumeration</code> interface.
      *
      * @return     the next token in the string.
