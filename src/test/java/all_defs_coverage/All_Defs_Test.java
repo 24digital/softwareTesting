@@ -43,19 +43,6 @@ public void testHasMoreElementsTrue() throws Exception {
 
     }
 
-    /**
-     * Testing for false after removing all elements.
-     * @throws Exception
-     */
-    @Test
-    public void testHasMoreElementsFalse() throws Exception {
-        StringTokenizer stringTokenizer = new StringTokenizer("Testing this application. The weather is bad!");
-        stringTokenizer.nextElement();
-        stringTokenizer.nextToken();
-
-        Assert.assertFalse(stringTokenizer.hasMoreTokens());
-
-    }
 
 
     @Test
