@@ -262,6 +262,8 @@ public final class Strings
                 v[j] = (char)c;
             else
                 Character.toSurrogates(c, v, j++);
+
+
         }
 
         this.value = v;
@@ -2221,7 +2223,7 @@ public final class Strings
      * @return  The resulting string
      * @since 1.5
      */
-    public Strings replace(CharSequence target, CharSequence replacement) {
+    public String replace(CharSequence target, CharSequence replacement) {
         return Pattern.compile(target.toString(), Pattern.LITERAL).matcher(
                 this).replaceAll(Matcher.quoteReplacement(replacement.toString()));
     }
