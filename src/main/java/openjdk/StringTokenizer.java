@@ -237,7 +237,7 @@ class StringTokenizer implements Enumeration<Object> {
      * @exception NullPointerException if str is <CODE>null</CODE>
      */
     public StringTokenizer(String str) {
-        this(str, " \t\n\r\f", false);
+        this(str, "\t\n\r\f", false);
     }
 
     /**

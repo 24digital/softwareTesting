@@ -38,8 +38,4 @@ public class Branch_Coverage_Test {
 
     }
 
-    @Test
-    public void testCountTokens() throws Exception {
-
-    }
 }
