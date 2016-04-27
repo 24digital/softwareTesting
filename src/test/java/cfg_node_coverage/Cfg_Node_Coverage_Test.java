@@ -46,7 +46,8 @@ public class Cfg_Node_Coverage_Test {
     }
 
     @Test
-    public void testCountTokens() throws Exception {
-
+    public void testCountTokensEmpty() throws Exception {
+        StringTokenizer stringTokenizer_countToken = new StringTokenizer("");
+        Assert.assertEquals(stringTokenizer_countToken.countTokens(),0);
     }
 }

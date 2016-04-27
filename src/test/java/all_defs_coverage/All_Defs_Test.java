@@ -34,6 +34,19 @@ public class All_Defs_Test {
 
     @Test
     public void testCountTokens() throws Exception {
+        StringTokenizer stringTokenizer_1 = new StringTokenizer("This-will-count-the-number-of-Tokens","-");
+        Assert.assertEquals(stringTokenizer_1.countTokens(),7);
+    }
 
+    @Test
+    public void testCountTokensEmpty() throws Exception {
+        StringTokenizer stringTokenizer_countToken = new StringTokenizer("");
+        Assert.assertEquals(stringTokenizer_countToken.countTokens(),0);
+    }
+
+    @Test
+    public void testCountTokensSpace() throws Exception {
+        StringTokenizer stringTokenizer_countToken = new StringTokenizer("   ");
+        Assert.assertEquals(stringTokenizer_countToken.countTokens(),1);
     }
 }

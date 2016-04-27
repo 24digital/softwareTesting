@@ -53,7 +53,8 @@ public class Cfg_Edge_Coverage_Test {
     }
 
     @Test
-    public void testCountTokens() throws Exception {
-
+    public void testCountTokensSingle() throws Exception {
+        StringTokenizer stringTokenizer_countToken = new StringTokenizer("Test");
+        Assert.assertEquals(stringTokenizer_countToken.countTokens(),1);
     }
 }

@@ -52,7 +52,14 @@ public class Cfg_Prime_Path_Coverage {
     }
 
     @Test
-    public void testCountTokens() throws Exception {
+    public void testCountTokensEmpty() throws Exception {
+        StringTokenizer stringTokenizer_countToken = new StringTokenizer("");
+        Assert.assertEquals(stringTokenizer_countToken.countTokens(),0);
+    }
 
+    @Test
+    public void testCountTokensTwo() throws Exception {
+        StringTokenizer stringTokenizer_countToken = new StringTokenizer("Test-Token","-");
+        Assert.assertEquals(stringTokenizer_countToken.countTokens(),2);
     }
 }

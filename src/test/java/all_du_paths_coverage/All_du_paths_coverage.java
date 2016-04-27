@@ -62,7 +62,14 @@ public class All_du_paths_coverage {
     }
 
     @Test
-    public void testCountTokens() throws Exception {
+    public void testCountTokensSingle() throws Exception {
+        StringTokenizer stringTokenizer_countToken = new StringTokenizer("Test");
+        Assert.assertEquals(stringTokenizer_countToken.countTokens(),1);
+    }
 
+    @Test
+    public void testCountTokensEmpty() throws Exception {
+        StringTokenizer stringTokenizer_countToken = new StringTokenizer("");
+        Assert.assertEquals(stringTokenizer_countToken.countTokens(),0);
     }
 }

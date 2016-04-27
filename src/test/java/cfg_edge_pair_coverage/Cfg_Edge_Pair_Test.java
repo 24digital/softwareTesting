@@ -55,7 +55,14 @@ public class Cfg_Edge_Pair_Test {
     }
 
     @Test
-    public void testCountTokens() throws Exception {
+    public void testCountTokensTwo() throws Exception {
+        StringTokenizer stringTokenizer_countToken = new StringTokenizer("Test-token","-");
+        Assert.assertEquals(stringTokenizer_countToken.countTokens(),2);
+    }
 
+    @Test
+    public void testCountTokensEmpty() throws Exception {
+        StringTokenizer stringTokenizer_countToken = new StringTokenizer("");
+        Assert.assertEquals(stringTokenizer_countToken.countTokens(),0);
     }
 }
