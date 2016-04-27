@@ -18,14 +18,14 @@ public class Cfg_Prime_Path_Coverage {
     @Test
     public void testNextToken1() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("Test this string");
-        Assert.assertEquals("Test",stringTokenizer.nextToken());
+        Assert.assertEquals("Test this string",stringTokenizer.nextToken());
     }
     //[1,2,3,5,6,8]
     @Test
     public void testNextToken2() throws Exception {
-        StringTokenizer stringTokenizer = new StringTokenizer("Test, split string");
+        StringTokenizer stringTokenizer = new StringTokenizer("Test, this string");
         stringTokenizer.nextToken(",");
-        Assert.assertEquals(" split string",stringTokenizer.nextToken());
+        Assert.assertEquals(" this string",stringTokenizer.nextToken());
     }
     //[1,2,3,5,6,7]
     @Test(expected=NoSuchElementException.class)

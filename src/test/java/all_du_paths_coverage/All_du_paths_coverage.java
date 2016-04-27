@@ -22,7 +22,7 @@ public class All_du_paths_coverage {
     @Test
     public void testNextToken1() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("Test this string");
-        Assert.assertEquals("Test",stringTokenizer.nextToken());
+        Assert.assertEquals("Test this string",stringTokenizer.nextToken());
     }
     //[1,2,3,5,6,8]
     @Test

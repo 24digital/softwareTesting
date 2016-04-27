@@ -18,7 +18,7 @@ public class Cfg_Edge_Pair_Test {
     @Test
     public void testNextToken1() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("Test this string");
-        Assert.assertEquals("Test",stringTokenizer.nextToken());
+        Assert.assertEquals("Test this string",stringTokenizer.nextToken());
     }
 
     //[1,2,4,5,6,7]
@@ -31,9 +31,9 @@ public class Cfg_Edge_Pair_Test {
     //[1,2,3,5,6,8]
     @Test
     public void testNextToken2() throws Exception {
-        StringTokenizer stringTokenizer = new StringTokenizer("Test, split string");
+        StringTokenizer stringTokenizer = new StringTokenizer("Test, this string");
         stringTokenizer.nextToken(",");
-        Assert.assertEquals(" split string",stringTokenizer.nextToken());
+        Assert.assertEquals(" this string",stringTokenizer.nextToken());
     }
 
     /**

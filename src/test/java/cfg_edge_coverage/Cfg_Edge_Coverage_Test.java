@@ -24,7 +24,7 @@ public class Cfg_Edge_Coverage_Test {
     @Test
     public void testNextToken1() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("Test this string");
-        Assert.assertEquals("Test",stringTokenizer.nextToken());
+        Assert.assertEquals("Test this string",stringTokenizer.nextToken());
     }
 
     //[1,2,4,5,6,7]
