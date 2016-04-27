@@ -40,16 +40,7 @@ public class Cfg_Prime_Path_Coverage {
         stringTokenizer.nextToken(",");
     }
 
-    /**
-     * Testing for more elements to exist after construction.
-     * @throws Exception
-     */
-    @Test
-    public void testHasMoreElementsTrue() throws Exception {
-        StringTokenizer stringTokenizer = new StringTokenizer("Test 1");
-        Assert.assertTrue(stringTokenizer.hasMoreTokens());
 
-    }
 
     @Test
     public void testCountTokensEmpty() throws Exception {

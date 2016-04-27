@@ -66,19 +66,6 @@ public class Branch_Coverage_Test {
         Assert.assertEquals("this",stringTokenizer.nextToken());
     }
 
-    @Test
-    public void testHasMoreTokens() throws Exception {
 
-    }
-
-    @Test
-    public void testNextToken() throws Exception {
-
-    }
-
-    @Test
-    public void testNextElement() throws Exception {
-
-    }
 
 }

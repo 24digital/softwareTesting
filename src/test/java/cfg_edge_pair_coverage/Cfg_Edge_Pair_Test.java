@@ -36,16 +36,6 @@ public class Cfg_Edge_Pair_Test {
         Assert.assertEquals(" this string",stringTokenizer.nextToken());
     }
 
-    /**
-     * Testing for more elements to exist after construction.
-     * @throws Exception
-     */
-    @Test
-    public void testHasMoreElementsTrue() throws Exception {
-        StringTokenizer stringTokenizer = new StringTokenizer("Test 1");
-        Assert.assertTrue(stringTokenizer.hasMoreTokens());
-
-    }
 
 
 

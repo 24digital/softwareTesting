@@ -27,7 +27,7 @@ public class All_Defs_Test {
      */
     @Test
     //[1,2,3]
-    public void testHasMoreElementsTrue() throws Exception {
+    public void testHasMoreTokensTrue() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("This is a test. The weather is great!");
         Assert.assertTrue(stringTokenizer.hasMoreTokens());
     }
