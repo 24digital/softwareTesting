@@ -24,7 +24,8 @@ public class Cfg_Edge_Coverage_Test {
 
     @Test
     public void testNextToken() throws Exception {
-
+        StringTokenizer stringTokenizer = new StringTokenizer("Test 1", "/");
+      //  Assert.
     }
 
     @Test

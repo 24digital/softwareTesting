@@ -5,6 +5,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.NoSuchElementException;
+
 import static org.junit.Assert.*;
 
 /**
@@ -25,11 +27,32 @@ public class All_Defs_Test {
     @Test
     public void testNextToken() throws Exception {
 
+
+    }
+// []
+    @Test
+    public void testNextTokenReturnToken() throws Exception {
+        StringTokenizer stringTokenizer = new StringTokenizer("Test this string");
+        Assert.assertEquals("Test",stringTokenizer.nextToken());
     }
 
     @Test
-    public void testNextToken1() throws Exception {
+    public void testNextTokenSeparate() throws Exception {
+        StringTokenizer stringTokenizer = new StringTokenizer("Test, split string");
+        stringTokenizer.nextToken(",");
+        Assert.assertEquals(" split string",stringTokenizer.nextToken());
+    }
 
+    @Test(expected=NoSuchElementException.class)
+    public void testNextTokenExcept() throws Exception {
+        StringTokenizer stringTokenizer = new StringTokenizer("");
+         stringTokenizer.nextToken();
+    }
+
+    @Test(expected=NoSuchElementException.class)
+    public void testNextToken2() throws Exception {
+        StringTokenizer stringTokenizer = new StringTokenizer("");
+        stringTokenizer.nextToken(",");
     }
 
     /**
@@ -37,13 +60,11 @@ public class All_Defs_Test {
      * @throws Exception
      */
     @Test
-public void testHasMoreElementsTrue() throws Exception {
+    public void testHasMoreElementsTrue() throws Exception {
         StringTokenizer stringTokenizer = new StringTokenizer("This is a test. The weather is great!");
         Assert.assertTrue(stringTokenizer.hasMoreTokens());
 
     }
-
-
 
     @Test
     public void testNextElement() throws Exception {

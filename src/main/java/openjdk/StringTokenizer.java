@@ -25,7 +25,7 @@ package openjdk;/*
 
 
 
-import openJdk2.Strings;
+
 
 import java.lang.*;
 import java.util.Enumeration;

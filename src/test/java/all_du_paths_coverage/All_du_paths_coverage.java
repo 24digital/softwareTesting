@@ -30,6 +30,7 @@ public class All_du_paths_coverage {
     @Test
     public void testNextToken1() throws Exception {
 
+
     }
     /**
      * Testing for more elements to exist after construction.
