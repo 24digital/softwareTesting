@@ -49,4 +49,10 @@ public class All_Defs_Test {
         StringTokenizer stringTokenizer_countToken = new StringTokenizer("   ");
         Assert.assertEquals(stringTokenizer_countToken.countTokens(),1);
     }
+
+    @Test
+    public void testCountTokensSpaces() throws Exception {
+        StringTokenizer stringTokenizer_countToken = new StringTokenizer("-","-");
+        Assert.assertEquals(stringTokenizer_countToken.countTokens(),0);
+    }
 }
